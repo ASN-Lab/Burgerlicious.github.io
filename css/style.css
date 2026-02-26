@@ -62,7 +62,7 @@ body {
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
     border-radius: 100%;
 }
 
@@ -76,6 +76,13 @@ body {
     padding: 6px 25px;
     text-decoration: none;
     font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #fff;
+    background-color: #8F0919;
+    border-radius: 20px;
+    transition: 0.1s;
 }
 
 .btn-outline {
@@ -95,36 +102,23 @@ body {
 /* Hero */
 
 .hero {
-    height: 100vh;
+    height: 116vh;
     background: linear-gradient(#BA0000, #5D0303);
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero img {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.hero-content p {
-    color: #fff;
-    margin: 15px 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .btn-primary {
     background: transparent;
-    padding: 10px 20px;
+    padding: 9px 100px;
     border: #fff solid 2px;
     border-radius: 30px;
     text-decoration: none;
@@ -135,7 +129,7 @@ body {
 .btn-primary:hover {
     background: #fff;
     color: #BA0000;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     transition: 0.3s;
 }
 
