@@ -33,7 +33,15 @@
 <section id="home" class="w-full max-h-screen bg-linear-to-b from-[#BA0000] to-[#5D0303]">
     <div class="flex flex-col items-center py-9">
         <img src="assets/images/Hero_section.png" alt="Hero Burger" class="w-2/3">
-        <a href="login.html" class="font-light text-white bg-transparent border-2 border-[#E3867A] hover:bg-[#BA0000] hover:border-transparent rounded-full transition-all p-1.5 px-7">View More</a>
+
+        <div class="flex items-center mt-6 gap-4">
+            <a href="login.html" class="font-light text-white bg-transparent border-2 border-[#E3867A] hover:bg-[#BA0000] hover:border-transparent rounded-full transition-all py-2 px-9">
+                View More 
+                <!-- <svg class="w-2 h-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg> -->
+            </a>
+        </div>
     </div>
 </section>
 
@@ -65,42 +73,157 @@
 </section>
 
 <!-- Menu Section -->
-<section id="menu" class="py-16 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="reveal text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">Menu Favorit</h2>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Menu Card 1 -->
-            <div class="reveal bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div class="h-48 bg-linear-to-br from-orange-400 to-orange-600"></div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Classic Beef</h3>
-                    <p class="text-gray-600">Juicy beef dengan keju premium.</p>
-                    <button class="mt-4 w-full btn-primary text-center">Pesan Sekarang</button>
-                </div>
+<section id="menu" class="bg-linear-to-b from-[#BA0000] to-[#5D0303] py-16 md:py-24">
+    <div class="py-12 mb-16">
+        <h1 class="text-4xl font-bold text-center text-white">Best Seller</h1>
+        <div class="grid md:grid-cols-3 p-10 gap-8">
+
+            <div class="text-center py-10 bg-linear-to-b from-[#BA0000] to-[#5D0303] rounded-lg hover:shadow-xl transition-all">
+                <a href="#" class="font-bold text-xl text-white mt-10 block">
+                    Original Flavour
+                    <img src="assets/images/BestSeller_1.png" alt="Original Flavour">
+                </a>
+            </div>
+
+            <div class="text-center py-10 bg-linear-to-b from-[#BA0000] to-[#5D0303] rounded-lg hover:shadow-xl  transition-all">
+                <a href="#" class="font-bold text-xl text-white mt-10 block">
+                    Chicken Original
+                    <img src="assets/images/BestSeller_2.png" alt="Chicken Original">
+                </a>
             </div>
             
-            <!-- Menu Card 2 -->
-            <div class="reveal bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div class="h-48 bg-linear-to-br from-yellow-400 to-yellow-600"></div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cheese Blast</h3>
-                    <p class="text-gray-600">Keju meleleh melimpah.</p>
-                    <button class="mt-4 w-full btn-primary text-center">Pesan Sekarang</button>
-                </div>
-            </div>
-            
-            <!-- Menu Card 3 -->
-            <div class="reveal bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div class="h-48 bg-linear-to-br from-red-400 to-red-600"></div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Spicy Chicken</h3>
-                    <p class="text-gray-600">Ayam crispy dengan saus pedas.</p>
-                    <button class="mt-4 w-full btn-primary text-center">Pesan Sekarang</button>
-                </div>
+            <div class="text-center py-10 bg-linear-to-b from-[#BA0000] to-[#5D0303] rounded-lg hover:shadow-xl  transition-all">
+                <a href="#" class="font-bold text-xl text-white mt-10 block">
+                    Spicy Chicken
+                    <img src="assets/images/BestSeller_3.png" alt="Spicy Chicken">
+                </a>
             </div>
         </div>
     </div>
+
+    <div class="w-full px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-16">
+        Menu <span class="text-[#FFAD5B]">Lainnya</span>
+    </h2>
+
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_1.png" alt="menu 1" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Double Meat Burger</h3>
+                <p class="text-gray-600 text-sm mb-7">Double daging yang juicy dengan keju premium.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 32.999</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_2.png" alt="menu 2" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Darth Vader Burger</h3>
+                <p class="text-gray-600 text-sm mb-7">Burger original edisi spesial kolaborasi dengan Star Wars.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 40.000</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_3.png" alt="menu 3" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Egg Cheese Burger</h3>
+                <p class="text-gray-600 text-sm mb-7">Daging dan telur yang nikmat dalam satu gigitan.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 37.000</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_4.png" alt="menu 4" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Red Bun Burger</h3>
+                <p class="text-gray-600 text-sm mb-7">Roti merah yang lezat dan pedas dengan daging sapi.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 32.499</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_5.png" alt="menu 5" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Fried Fries</h3>
+                <p class="text-gray-600 text-sm mb-7">Kentang goreng renyah dengan saus cocol favorit.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 15.900</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_6.png" alt="menu 6" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Cheese Hot Dogs</h3>
+                <p class="text-gray-600 text-sm mb-7">Roti panjang dengan sosis daging sapi dan keju yang lezat.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 20.000</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_7.png" alt="menu 7" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Fried Wings</h3>
+                <p class="text-gray-600 text-sm mb-7">Sayap ayam goreng renyah dengan cita rasa yang lezat.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 39.000</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col">
+            <div class="flex justify-center items-center bg-gray-50 p-6">
+                <img src="assets/images/menu_8.png" alt="menu 8" class="h-16 object-contain">
+            </div>
+            <div class="p-6 flex flex-col grow">
+                <h3 class="text-lg font-bold text-[#BA0000] mb-2">Bucket Nugget</h3>
+                <p class="text-gray-600 text-sm mb-7">Nugget ayam renyah dengan saus cocol favorit untuk dinikmati.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#BA0000]">Rp 25.000</span>
+                    <a href="#" class="bg-[#FFAD5B] text-[#BD0202] text-sm px-4 py-2 rounded-full font-semibold hover:bg-[#7A0000] transition">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 </section>
 
 <!-- About Section -->
