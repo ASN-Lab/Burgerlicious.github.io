@@ -42,7 +42,7 @@
         clearInterval(progressInterval);
         if (bar) bar.style.width = '100%';
         if (percent) percent.textContent = '100%';
-        setTimeout(callback, 400);
+        setTimeout(callback, 300);
     }
 
     function hideLoader(overlay) {
@@ -82,7 +82,7 @@
 
             setTimeout(() => {
                 window.location.href = href;
-            }, 400);
+            }, 1500);
         });
     });
 })();
