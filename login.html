@@ -68,23 +68,28 @@
             <p class="text-2xl text-center mt-14" style="font-family: 'Baloo Bhaijaan', sans-serif;">Login</p>
 
             <div class="mt-4 px-7 flex flex-col gap-4">
+                <!-- Form Message -->
+                <div id="formMessage" class="hidden text-sm text-center px-4 py-2 rounded-lg"></div>
+
                 <!-- Email -->
                 <div class="flex flex-col gap-1.5">
                     <label class="text-sm text-gray-700">Email</label>
-                    <input type="email" placeholder="Masukkan email"
+                    <input id="email" type="email" placeholder="Masukkan email"
                         class="text-sm px-4 py-3 rounded-md border border-[#5D0303] focus:outline-none focus:ring-2 focus:ring-[#5D0303] focus:border-yellow-400 transition duration-200">
+                    <span id="emailError" class="hidden text-xs text-red-600"></span>
                 </div>
 
                 <!-- Password -->
                 <div class="flex flex-col gap-1.5">
                     <label class="text-sm text-gray-700">Password</label>
-                    <input type="password" id="passwordMobile" placeholder="Masukkan password"
+                    <input type="password" id="password" placeholder="Masukkan password"
                         class="text-sm px-4 py-3 rounded-md border border-[#5D0303] focus:outline-none focus:ring-2 focus:ring-[#5D0303] focus:border-yellow-400 transition duration-200">
-                    <label class="inline-flex items-center gap-2 mt-1 text-gray-700 text-sm cursor-pointer"><input type="checkbox" id="showPasswordMobile" class="w-4 h-4 border border-gray-400 rounded focus:ring-2 focus:ring-[#5D0303]"onchange="document.getElementById('passwordMobile').type = this.checked ? 'text' : 'password'">Show Password</label>
+                    <span id="passwordError" class="hidden text-xs text-red-600"></span>
+                    <label class="inline-flex items-center gap-2 mt-1 text-gray-700 text-sm cursor-pointer"><input type="checkbox" id="showPassword" class="w-4 h-4 border border-gray-400 rounded focus:ring-2 focus:ring-[#5D0303]">Show Password</label>
                 </div>
 
                 <!-- Submit -->
-                <button type="button" class="mx-auto w-[120px] mt-2 bg-[#5D0303] text-white py-2.5 rounded-xl shadow-md hover:bg-[#8F0919] transition duration-200 font-semibold tracking-wide">SIGN IN</button>
+                <button id="btnLogin" type="button" class="mx-auto w-[120px] mt-2 bg-[#5D0303] text-white py-2.5 rounded-xl shadow-md hover:bg-[#8F0919] transition duration-200 font-semibold tracking-wide disabled:opacity-60">SIGN IN</button>
 
                 <div class="flex flex-col gap-1 mt-1">
                     <p class="text-xs text-center">Forgot <span class="text-[#8F0919] cursor-pointer hover:underline">Username / Password?</span></p>
@@ -114,27 +119,31 @@
                     </div>
                 </div>
                 <div class="mt-5 px-10 flex flex-col gap-5">
+                    <!-- Form Message -->
+                    <div id="formMessage" class="hidden text-sm text-center px-4 py-2 rounded-lg"></div>
+
                     <!-- Email -->
                     <div class="flex flex-col gap-2">
                         <label class="text-sm text-gray-700">Email</label>
-                        <input type="email" placeholder="Masukkan email"
+                        <input id="email" type="email" placeholder="Masukkan email"
                             class="text-sm px-4 py-3 rounded-sm border border-[#5D0303] focus:outline-none focus:ring-2 focus:ring-[#5D0303] focus:border-yellow-400 transition duration-200">
+                        <span id="emailError" class="hidden text-xs text-red-600"></span>
                     </div>
                     <!-- Password -->
                     <div class="flex flex-col gap-2">
                         <label class="text-sm text-gray-700">Password</label>
-                        <input type="password" id="passwordDesktop" placeholder="Masukkan password"
+                        <input type="password" id="password" placeholder="Masukkan password"
                             class="text-sm px-4 py-3 rounded-sm border border-[#5D0303] focus:outline-none focus:ring-2 focus:ring-[#5D0303] focus:border-yellow-400 transition duration-200">
+                        <span id="passwordError" class="hidden text-xs text-red-600"></span>
                         <label class="inline-flex items-center gap-2 mt-2 text-gray-700 text-sm cursor-pointer">
-                            <input type="checkbox"
-                                class="w-4 h-4 border border-gray-400 rounded focus:ring-2 focus:ring-[#5D0303]"
-                                onchange="document.getElementById('passwordDesktop').type = this.checked ? 'text' : 'password'">
+                            <input type="checkbox" id="showPassword"
+                                class="w-4 h-4 border border-gray-400 rounded focus:ring-2 focus:ring-[#5D0303]">
                             Show Password
                         </label>
                     </div>
                     <!-- Submit -->
-                    <button type="button"
-                        class="mx-auto w-[100px] mt-2 bg-[#5D0303] text-white py-2 rounded-lg shadow-md hover:bg-[#8F0919] transition duration-200">
+                    <button id="btnLogin" type="button"
+                        class="mx-auto w-[100px] mt-2 bg-[#5D0303] text-white py-2 rounded-lg shadow-md hover:bg-[#8F0919] transition duration-200 disabled:opacity-60">
                         SIGN IN
                     </button>
                     <div class="flex flex-col gap-1 mt-2">
@@ -146,5 +155,4 @@
         </div>
     </div>
     <script src="loading.js"></script>
-</body>
-</html>
+    <script src="login.js"></script>
